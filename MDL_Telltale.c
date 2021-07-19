@@ -35,8 +35,8 @@
 //==============================================================================
 // PRIVATE MACROS
 //==============================================================================
-#define cMdl_telltale_Safety_cFalse              ((uint16)0xD296)
-#define cMdl_telltale_Safety_cTrue               ((uint16)0xD269)
+#define cMdl_telltale_Safety_cFalse              ((uint16)0xD269)
+#define cMdl_telltale_Safety_cTrue               ((uint16)0xD296)
 #define cTTFaultAbsent  ((uint8)0)
 
 //ESPACT
