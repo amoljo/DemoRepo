@@ -22,7 +22,7 @@
 
 #ifndef PRIVATE
 #define PRIVATE
-#endif  // #ifndef PRIVATE
+#endif
 
 #include "MDL_Telltale_RI.h"
 #include "MDL_Telltale.h"
@@ -1443,7 +1443,7 @@ TelltaleStatusType UpdateDriverSeatbeltState(const TelltaleIdType TTidP)
     uint8                               u8OutlineL  = 0U;
     TelltaleStatusType                  VHLStateL = TelltaleStatus_Off;
 
-    //DAT_DG_TELLTALES_SEAT_BELT_REM_CFG  = ‘Front places’ or DAT_DG_TELLTALES_SEAT_BELT_OUTLINE  = ‘Presence’
+    //DAT_DG_TELLTALES_SEAT_BELT_REM_CFG  = Â‘Front placesÂ’ or DAT_DG_TELLTALES_SEAT_BELT_OUTLINE  = Â‘PresenceÂ’
     (void)RI_ReadHwId(TelltaleId_TELLTALES_SEAT_BELT_REM_CFG,&u8PresencePassL);
     (void)RI_ReadHwId(TelltaleId_TELLTALES_SEAT_BELT_OUTLINE,&u8OutlineL);
 
@@ -1558,7 +1558,7 @@ TelltaleStatusType UpdatePassengerSeatbeltState(const TelltaleIdType TTidP)
     uint8                               u8PresenceL  = 0U;
     uint8                               u8OutlineL   = 0U;
 
-    //DAT_DG_TELLTALES_SEAT_BELT_REM_CFG  = ‘Front places’ or DAT_DG_TELLTALES_SEAT_BELT_OUTLINE  = ‘Presence’
+    //DAT_DG_TELLTALES_SEAT_BELT_REM_CFG  = Â‘Front placesÂ’ or DAT_DG_TELLTALES_SEAT_BELT_OUTLINE  = Â‘PresenceÂ’
     (void)RI_ReadHwId(TelltaleId_TELLTALES_SEAT_BELT_REM_CFG,&u8PresenceL);
     (void)RI_ReadHwId(TelltaleId_TELLTALES_SEAT_BELT_OUTLINE,&u8OutlineL);
 
